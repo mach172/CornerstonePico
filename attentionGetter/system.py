@@ -112,7 +112,7 @@ spi = SPI(
     miso=Pin(4)
 )
 
-cs = Pin(5, Pin.OUT, value=1)
+cs = Pin(1, Pin.OUT, value=1)
 
 def read_register(register, count=1):
     cs.value(0)
